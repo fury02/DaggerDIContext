@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         //context
         var app = this
-        //dager build or create
+        //dagger build or create
         daggerMyAppComponent = DaggerMyAppComponent.builder().myAppModule(MyAppModule(this)).build()
         a = daggerMyAppComponent.get_a()
 
